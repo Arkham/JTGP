@@ -4,20 +4,26 @@
          _/ // / / / / / /  __/ /     / __/ / /_/ / / / / /__/ /_/ / /_/ / / / (__  )
         /___/_/ /_/_/ /_/\___/_/     /_/    \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
 
-        var pythagoras = function (a, b) {
-          var sum = 0;
+        var add = function (a, b) {
+          if (typeof b === 'undefined') {
+            return function (x) {
+              return a + x;
+            }
+          } else {
+            return a + b;
+          }
+        };
 
-          var square = function (num) {
-            return num * num;
-          };
+        add(1, 3)
+        // 4
 
-          sum = square(a) + square(b);
+        var addFour = add(4);
 
-          return Math.sqrt(sum);
-        }
+        addFour(99)
+        // 103
 
-        pythagoras(3,4)
-        // 5
+        addFour(53)
+        // 57
 
 
 

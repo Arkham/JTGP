@@ -12,7 +12,7 @@
 
         null == undefined
         // true
-        // WTF
+        // WAT
 
 
 

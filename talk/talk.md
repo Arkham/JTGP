@@ -13,7 +13,7 @@
 ```javascript
 0.1 + 0.2
 // 0.30000000000000004
-// WTF
+// WAT
 ```
 
 
@@ -59,7 +59,7 @@ isNaN(NaN)
 
 NaN == NaN
 // false
-// WTF
+// WAT
 ```
 
 
@@ -122,6 +122,7 @@ greeting.toUpperCase()
 
 3 + 4 + "5"
 // '75'
+// WAT
 ```
 
 
@@ -174,7 +175,7 @@ hello = null
 
 "" == "0"
 // false
-// WTF!
+// WAT
 ```
 
 
@@ -189,7 +190,7 @@ false == null
 
 null == undefined
 // true
-// WTF
+// WAT
 ```
 
 
@@ -205,14 +206,14 @@ null == undefined
 "" === "0"
 // false
 
-false === undefined
-// false
+false !== undefined
+// true
 
-false === null
-// false
+false !== null
+// true
 
-null === undefined
-// false
+null !== undefined
+// true
 ```
 
 
@@ -325,6 +326,8 @@ for (var i = 0, len = ary.length; i < len; i += 1) {
 
 
 # Intermezzo
+
+https://www.destroyallsoftware.com/talks/wat
 
 
 # Control Structures
@@ -588,10 +591,10 @@ scarlett.fullNameReversed()
 
 # Prototype Chain
 
-- scarlett.fullName()
-- scarlett has no method fullName
-- scarlett.prototype has method fullName
-- scarlett.prototype.fullName.apply(scarlett)
+1. scarlett.fullName()
+2. scarlett has no method fullName
+3. scarlett.prototype has method fullName
+4. scarlett.prototype.fullName.apply(scarlett)
 
 
 # DYNAMIC
@@ -617,27 +620,6 @@ String.prototype.reverse = function () {
 
 "What a wonderful world".reverse()
 // 'dlrow lufrednow a tahW'
-```
-
-
-# New New
-
-```javascript
-Function.prototype.new = function () {
-  var that = Object.create(this.prototype);
-
-  var obj = this.apply(that, arguments);
-
-  return (typeof obj === 'object' && obj) || that;
-}
-
-var roger = Person.new('Roger', 'Waters');
-
-roger.fullName()
-// 'Roger Waters'
-
-roger.fullNameReversed()
-// 'Waters Roger'
 ```
 
 
@@ -682,10 +664,8 @@ var addFour = add(4);
 addFour(99)
 // 103
 
-var subtractFifteen = add(-15);
-
-subtractFifteen(100)
-// 85
+addFour(53)
+// 57
 ```
 
 
@@ -705,6 +685,7 @@ var scarlett = new Person('Scarlett', 'Johansson');
 
 scarlett.fullNameTwice()
 // TypeError: Object [object global] has no method 'fullName'
+// WAT
 ```
 
 

@@ -1,24 +1,23 @@
-            _   __                _   __
-           / | / /__ _      __   / | / /__ _      __
-          /  |/ / _ \ | /| / /  /  |/ / _ \ | /| / /
-         / /|  /  __/ |/ |/ /  / /|  /  __/ |/ |/ /
-        /_/ |_/\___/|__/|__/  /_/ |_/\___/|__/|__/
+            ____                         ______                 __  _
+           /  _/___  ____  ___  _____   / ____/_  ______  _____/ /_(_)___  ____  _____
+           / // __ \/ __ \/ _ \/ ___/  / /_  / / / / __ \/ ___/ __/ / __ \/ __ \/ ___/
+         _/ // / / / / / /  __/ /     / __/ / /_/ / / / / /__/ /_/ / /_/ / / / (__  )
+        /___/_/ /_/_/ /_/\___/_/     /_/    \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
 
-        Function.prototype.new = function () {
-          var that = Object.create(this.prototype);
+        var pythagoras = function (a, b) {
+          var sum = 0;
 
-          var obj = this.apply(that, arguments);
+          var square = function (num) {
+            return num * num;
+          };
 
-          return (typeof obj === 'object' && obj) || that;
+          sum = square(a) + square(b);
+
+          return Math.sqrt(sum);
         }
 
-        var roger = Person.new('Roger', 'Waters');
-
-        roger.fullName()
-        // 'Roger Waters'
-
-        roger.fullNameReversed()
-        // 'Waters Roger'
+        pythagoras(3,4)
+        // 5
 
 
 

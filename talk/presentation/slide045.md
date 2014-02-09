@@ -4,28 +4,20 @@
          _/ // / / / / / /  __/ /     / __/ / /_/ / / / / /__/ /_/ / /_/ / / / (__  )
         /___/_/ /_/_/ /_/\___/_/     /_/    \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
 
-        var add = function (a, b) {
-          if (typeof b === 'undefined') {
-            return function (x) {
-              return a + x;
-            }
-          } else {
-            return a + b;
-          }
-        };
+        Person.prototype.fullNameTwice = function () {
+          var doubleFullName = function () {
+            var value = this.fullName();
+            return value + " " + value;
+          };
 
-        add(1, 3)
-        // 4
+          return doubleFullName();
+        }
 
-        var addFour = add(4);
+        var scarlett = new Person('Scarlett', 'Johansson');
 
-        addFour(99)
-        // 103
-
-        var subtractFifteen = add(-15);
-
-        subtractFifteen(100)
-        // 85
+        scarlett.fullNameTwice()
+        // TypeError: Object [object global] has no method 'fullName'
+        // WAT
 
 
 

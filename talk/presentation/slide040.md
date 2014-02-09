@@ -4,10 +4,10 @@
          / ____/ /  / /_/ / /_/ /_/ / /_/ /_/ / /_/ /  __/  / /___/ / / / /_/ / / / / /
         /_/   /_/   \____/\__/\____/\__/\__, / .___/\___/   \____/_/ /_/\__,_/_/_/ /_/
                                        /____/_/
-        • scarlett.fullName()
-        • scarlett has no method fullName
-        • scarlett.prototype has method fullName
-        • scarlett.prototype.fullName.apply(scarlett)
+        1. scarlett.fullName()
+        2. scarlett has no method fullName
+        3. scarlett.prototype has method fullName
+        4. scarlett.prototype.fullName.apply(scarlett)
 
 
 

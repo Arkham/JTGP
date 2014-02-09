@@ -13,14 +13,14 @@
         "" === "0"
         // false
 
-        false === undefined
-        // false
+        false !== undefined
+        // true
 
-        false === null
-        // false
+        false !== null
+        // true
 
-        null === undefined
-        // false
+        null !== undefined
+        // true
 
 
 

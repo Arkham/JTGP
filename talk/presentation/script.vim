@@ -1,6 +1,6 @@
-set nonumber
-set norelativenumber
 set nolist
+set norelativenumber
+set nonumber
 set hidden
 noremap <PageUp> :bp<CR>
 noremap <Left> :bp<CR>
@@ -72,7 +72,7 @@ b 8
 b 9
 
 
-7,15SyntaxInclude javascript
+7,16SyntaxInclude javascript
 
 
 
@@ -320,7 +320,7 @@ b 42
 b 43
 
 
-7,22SyntaxInclude javascript
+7,21SyntaxInclude javascript
 
 
 
@@ -328,7 +328,7 @@ b 43
 b 44
 
 
-7,21SyntaxInclude javascript
+7,27SyntaxInclude javascript
 
 
 
@@ -336,7 +336,7 @@ b 44
 b 45
 
 
-7,29SyntaxInclude javascript
+7,21SyntaxInclude javascript
 
 
 
@@ -344,20 +344,12 @@ b 45
 b 46
 
 
-7,20SyntaxInclude javascript
-
-
-
-
-b 47
-
-
 7,22SyntaxInclude javascript
 
 
 
 
-b 48
+b 47
 
 
 

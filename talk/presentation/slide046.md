@@ -5,8 +5,10 @@
         /___/_/ /_/_/ /_/\___/_/     /_/    \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
 
         Person.prototype.fullNameTwice = function () {
+          var that = this;
+
           var doubleFullName = function () {
-            var value = this.fullName();
+            var value = that.fullName();
             return value + " " + value;
           };
 
@@ -16,7 +18,7 @@
         var scarlett = new Person('Scarlett', 'Johansson');
 
         scarlett.fullNameTwice()
-        // TypeError: Object [object global] has no method 'fullName'
+        // 'Scarlett Johansson Scarlett Johansson'
 
 
 

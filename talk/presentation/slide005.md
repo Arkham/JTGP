@@ -14,7 +14,7 @@
 
         NaN == NaN
         // false
-        // WTF
+        // WAT
 
 
 
