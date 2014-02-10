@@ -4,20 +4,16 @@
          _/ // / / / / / /  __/ /     / __/ / /_/ / / / / /__/ /_/ / /_/ / / / (__  )
         /___/_/ /_/_/ /_/\___/_/     /_/    \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
 
-        var pythagoras = function (a, b) {
-          var sum = 0;
-
-          var square = function (num) {
-            return num * num;
-          };
-
-          sum = square(a) + square(b);
-
-          return Math.sqrt(sum);
+        var makeFunction = function () {
+          return function () {
+            return 42;
+          }
         }
 
-        pythagoras(3,4)
-        // 5
+        var meaningOfLife = makeFunction();
+
+        meaningOfLife()
+        // 42
 
 
 

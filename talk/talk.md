@@ -626,6 +626,62 @@ String.prototype.reverse = function () {
 # Inner Functions
 
 ```javascript
+var makeFunction = function () {
+  return function () {
+    return 42;
+  }
+}
+
+var meaningOfLife = makeFunction();
+
+meaningOfLife()
+// 42
+```
+
+
+# Inner Functions
+
+```javascript
+var makeFunction = function () {
+  return function (word) {
+    return "Your word is " + word;
+  };
+};
+
+var wordFunc = makeFunction();
+
+wordFunc("the bird");
+// 'Your word is the bird'
+```
+
+
+# Inner Functions
+
+```javascript
+var makeAdder = function (a) {
+  return function (b) {
+    return a + b;
+  };
+};
+
+var addFour = makeAdder(4);
+
+addFour(38)
+// 42
+
+addFour(23)
+// 27
+
+var subtractFifteen = makeAdder(-15);
+
+subtractFifteen(100)
+// 85
+```
+
+
+# Inner Functions
+
+```javascript
 var pythagoras = function (a, b) {
   var sum = 0;
 

@@ -4,17 +4,21 @@
          _/ // / / / / / /  __/ /     / __/ / /_/ / / / / /__/ /_/ / /_/ / / / (__  )
         /___/_/ /_/_/ /_/\___/_/     /_/    \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
 
-        var makeFunction = function () {
-          return function (word) {
-            return "Your word is " + word;
+        Person.prototype.fullNameTwice = function () {
+          var that = this;
+
+          var doubleFullName = function () {
+            var value = that.fullName();
+            return value + " " + value;
           };
-        };
 
-        var wordFunc = makeFunction();
+          return doubleFullName();
+        }
 
-        wordFunc("the bird");
-        // 'Your word is the bird'
+        var scarlett = new Person('Scarlett', 'Johansson');
 
+        scarlett.fullNameTwice()
+        // 'Scarlett Johansson Scarlett Johansson'
 
 
 
@@ -94,4 +98,5 @@
 
 
 
-slide 044
+
+slide 049

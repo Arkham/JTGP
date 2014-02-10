@@ -4,21 +4,20 @@
          _/ // / / / / / /  __/ /     / __/ / /_/ / / / / /__/ /_/ / /_/ / / / (__  )
         /___/_/ /_/_/ /_/\___/_/     /_/    \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
 
-        Person.prototype.fullNameTwice = function () {
-          var that = this;
+        var pythagoras = function (a, b) {
+          var sum = 0;
 
-          var doubleFullName = function () {
-            var value = that.fullName();
-            return value + " " + value;
+          var square = function (num) {
+            return num * num;
           };
 
-          return doubleFullName();
+          sum = square(a) + square(b);
+
+          return Math.sqrt(sum);
         }
 
-        var scarlett = new Person('Scarlett', 'Johansson');
-
-        scarlett.fullNameTwice()
-        // 'Scarlett Johansson Scarlett Johansson'
+        pythagoras(3,4)
+        // 5
 
 
 
