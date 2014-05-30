@@ -8,6 +8,7 @@
 - Arrays
 
 
+---
 # Numbers
 
 ```javascript
@@ -17,6 +18,7 @@
 ```
 
 
+---
 # Math
 
 ```javascript
@@ -29,6 +31,7 @@ var d = Math.PI * r * r;
 ```
 
 
+---
 # parseInt
 
 ```javascript
@@ -46,6 +49,7 @@ parseInt("hello", 10)
 ```
 
 
+---
 # NaN
 
 Not-a-Number
@@ -63,6 +67,7 @@ NaN == NaN
 ```
 
 
+---
 # Infinity
 
 ```javascript
@@ -78,6 +83,7 @@ Infinity == Infinity
 ```
 
 
+---
 # Infinity
 
 ```javascript
@@ -92,6 +98,7 @@ isFinite(NaN)
 ```
 
 
+---
 # Strings
 
 ```javascript
@@ -111,6 +118,7 @@ greeting.toUpperCase()
 ```
 
 
+---
 # Strings
 
 ```javascript
@@ -126,12 +134,14 @@ greeting.toUpperCase()
 ```
 
 
+---
 # Null or Undefined?
 
-- null: no value
-- undefined: uninitiliazed value, default value for variables
+- *null*: no value
+- *undefined*: uninitiliazed value, default value for variables
 
 
+---
 # Null or Undefined?
 
 ```javascript
@@ -143,6 +153,7 @@ hello = null
 ```
 
 
+---
 # Falsy
 
 - false
@@ -153,6 +164,7 @@ hello = null
 - undefined
 
 
+---
 # Equality
 
 ```javascript
@@ -164,6 +176,7 @@ hello = null
 ```
 
 
+---
 # Equality
 
 ```javascript
@@ -179,6 +192,7 @@ hello = null
 ```
 
 
+---
 # Equality
 
 ```javascript
@@ -194,6 +208,7 @@ null == undefined
 ```
 
 
+---
 # Equality
 
 ```javascript
@@ -217,12 +232,14 @@ null !== undefined
 ```
 
 
+---
 # Equality
 
 - Always use === and !==
 - Coffeescript converts == to ===, by default
 
 
+---
 # Objects
 
 - HashMaps in Java
@@ -232,6 +249,7 @@ null !== undefined
 - Hash tables in C and C++
 
 
+---
 # Objects
 
 ```javascript
@@ -245,6 +263,7 @@ me['name'] = 'Ju'
 ```
 
 
+---
 # Nested Objects
 
 ```javascript
@@ -262,6 +281,7 @@ welaika['address']['country'] = 'Italy'
 ```
 
 
+---
 # Objects
 
 ```javascript
@@ -281,6 +301,7 @@ for (var key in me) {
 ```
 
 
+---
 # Arrays
 
 ```javascript
@@ -297,6 +318,7 @@ a
 ```
 
 
+---
 # Arrays
 
 ```javascript
@@ -309,6 +331,7 @@ a.length
 ```
 
 
+---
 # Arrays
 
 ```javascript
@@ -325,11 +348,13 @@ for (var i = 0, len = ary.length; i < len; i += 1) {
 ```
 
 
+---
 # Intermezzo
 
 https://www.destroyallsoftware.com/talks/wat
 
 
+---
 # Control Structures
 
 ```javascript
@@ -351,6 +376,7 @@ while (true) {
 ```
 
 
+---
 # Control Structures
 
 ```javascript
@@ -362,6 +388,7 @@ var allowed = (age > 18) ? "yes" : "no";
 ```
 
 
+---
 # Functions
 
 ```javascript
@@ -384,6 +411,7 @@ add(1,2,3)
 ```
 
 
+---
 # Functions
 
 ```javascript
@@ -402,6 +430,7 @@ add(1,2,3,4,5,6,7,8,9,10)
 ```
 
 
+---
 # Functions
 
 ```javascript
@@ -414,6 +443,7 @@ avg(1,2,3,4,5,6,7,8,9,10)
 ```
 
 
+---
 # Functions
 
 ```javascript
@@ -426,6 +456,7 @@ avg(1,2,3,4,5,6,7,8,9,10)
 ```
 
 
+---
 # Self Invoking
 
 ```javascript
@@ -437,6 +468,7 @@ avg(1,2,3,4,5,6,7,8,9,10)
 ```
 
 
+---
 # Scope
 
 ```javascript
@@ -457,6 +489,7 @@ b
 ```
 
 
+---
 # OOP
 
 ```javascript
@@ -474,6 +507,7 @@ ju
 ```
 
 
+---
 # OOP
 
 ```javascript
@@ -493,6 +527,7 @@ personFullNameReversed(ju)
 ```
 
 
+---
 # OOP
 
 ```javascript
@@ -519,6 +554,7 @@ aaron.fullNameReversed()
 ```
 
 
+---
 # This
 
 ```javascript
@@ -537,6 +573,7 @@ matzName.apply(matz)
 ```
 
 
+---
 # New
 
 ```javascript
@@ -563,6 +600,7 @@ beppe.fullNameReversed()
 ```
 
 
+---
 # Prototype
 
 ```javascript
@@ -589,6 +627,7 @@ scarlett.fullNameReversed()
 ```
 
 
+---
 # Prototype Chain
 
 1. scarlett.fullName()
@@ -597,6 +636,7 @@ scarlett.fullNameReversed()
 4. scarlett.prototype.fullName.apply(scarlett)
 
 
+---
 # DYNAMIC
 
 ```javascript
@@ -611,6 +651,7 @@ tony.industriesName()
 ```
 
 
+---
 # Open Prototypes
 
 ```javascript
@@ -623,6 +664,7 @@ String.prototype.reverse = function () {
 ```
 
 
+---
 # Inner Functions
 
 ```javascript
@@ -639,6 +681,7 @@ meaningOfLife()
 ```
 
 
+---
 # Inner Functions
 
 ```javascript
@@ -655,6 +698,7 @@ wordFunc("the bird");
 ```
 
 
+---
 # Inner Functions
 
 ```javascript
@@ -679,6 +723,7 @@ subtractFifteen(100)
 ```
 
 
+---
 # Inner Functions
 
 ```javascript
@@ -699,6 +744,7 @@ pythagoras(3,4)
 ```
 
 
+---
 # Inner Functions
 
 ```javascript
@@ -725,6 +771,7 @@ addFour(53)
 ```
 
 
+---
 # Inner Functions
 
 ```javascript
@@ -745,6 +792,7 @@ scarlett.fullNameTwice()
 ```
 
 
+---
 # Inner Functions
 
 ```javascript
@@ -766,6 +814,7 @@ scarlett.fullNameTwice()
 ```
 
 
+---
 # THANKS!
 
 @arkh4m
